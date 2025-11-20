@@ -83,7 +83,7 @@ Here’s a **concise, clean, professional rewrite** of all three sections while 
 
 **Value:** Reveals trends and relationships that raw numbers alone can’t show—ideal for informed model selection.
 
----
+
 
 ## **3. 📋 History Tab — Long-Term Performance Tracking**
 
@@ -109,7 +109,7 @@ Here’s a **concise, clean, professional rewrite** of all three sections while 
 
 **Value:** Turns benchmarking into a continuous monitoring system rather than a one-off test.
 
----
+
 
 ## ⚙️ Installation
 
