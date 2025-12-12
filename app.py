@@ -328,20 +328,20 @@ class ResultsManager:
             json.dump(data, f, indent=2)
         return filename
     
-    # @staticmethod
-    # def load_results(filename: str) -> List[BenchmarkResult]:
-    #     """Load results from JSON file"""
-    #     try:
-    #         with open(filename, 'r') as f:
-    #             data = json.load(f)
-    #         return [BenchmarkResult(**item) for item in data]
-    #     except FileNotFoundError:
-    #         st.warning(f"File not found: {filename}")
-    #         return []
-    #     except Exception as e:
-    #         logger.error(f"Error loading results: {e}")
-    #         st.error(f"Failed to load results file: {e}")
-    #         return []
+    @staticmethod
+    def load_results(filename: str) -> List[BenchmarkResult]:
+        """Load results from JSON file"""
+        try:
+            with open(filename, 'r') as f:
+                data = json.load(f)
+            return [BenchmarkResult(**item) for item in data]
+        except FileNotFoundError:
+            st.warning(f"File not found: {filename}")
+            return []
+        except Exception as e:
+            logger.error(f"Error loading results: {e}")
+            st.error(f"Failed to load results file: {e}")
+            return []
     
     @staticmethod
     def results_to_dataframe(results: List[BenchmarkResult]) -> pd.DataFrame:
