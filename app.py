@@ -375,9 +375,9 @@ def create_performance_charts(df: pd.DataFrame):
     
     fig_latency.update_layout(
         title="Latency Distribution by Model",
-        xaxis_title="Model",
-        yaxis_title="Latency (ms)",
-        hovermode='x unified'
+        # xaxis_title="Model",
+        # yaxis_title="Latency (ms)",
+        # hovermode='x unified'
     )
     
     # Throughput comparison
